@@ -1,0 +1,15 @@
+@font-face {
+	font-family: "Montserrat";
+	src: local("Montserrat"),
+		url("../assets/fonts/Montserrat/static/Montserrat-Regular.ttf")
+			format("ttf");
+}
+
+@font-face {
+	font-family: "Poppins";
+	src: local("Poppins"),
+		url("../assets/fonts/Poppins/Poppins-Regular.ttf") format("ttf");
+}
+
+$Montserrat: "Montserrat", sans-serif;
+$Poppins: "Poppins", sans-serif;
