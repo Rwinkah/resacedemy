@@ -8,9 +8,10 @@
 }
 
 .hero_wrapper {
-	padding: 5rem 0;
+	padding: 6rem 0;
 	margin: 0px 5rem;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	position: relative;
@@ -66,14 +67,31 @@
 
 	> .hero_bacground_images {
 		position: absolute;
-		top: 0;
-		left: 0;
+		transform: translate(-50%, -50%);
+		top: 50%;
+		left: 50%;
 		width: 100%;
 		height: 100%;
+		margin: 6rem 0;
+		gap: 6rem;
 
-		> .red_periwinkle {
-			width: 1.6875rem;
-			height: 1.6875rem;
+		> img {
+			width: 78.125rem;
+			height: 16.49625rem;
+		}
+	}
+
+	> .hero_background_shapes {
+		width: 100%;
+		height: 100%;
+		margin: 6rem 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		> img {
+			width: 72.6875rem;
+			height: 16.75163rem;
 			flex-shrink: 0;
 		}
 	}
