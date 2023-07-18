@@ -4,6 +4,7 @@ import AboutSection from "./AboutSection";
 import FacilitiesSection from "./FacilitiesSection";
 import Services from "./Services";
 import CommunitySection from "./CommunitySection";
+import TestimonialsCard from "./Testimonials";
 
 const Main = () => {
 	return (
@@ -13,6 +14,7 @@ const Main = () => {
 			<FacilitiesSection />
 			<Services />
 			<CommunitySection />
+			<TestimonialsCard />
 		</>
 	);
 };
