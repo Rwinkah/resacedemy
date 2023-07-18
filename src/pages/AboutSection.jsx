@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/AboutSection.scss";
 import link_arrow from "../assets/images/aboutsection/arrow-right.png";
+import union from "../assets/images/aboutsection/union.svg";
 
 const AboutSection = () => {
 	return (
@@ -28,7 +29,7 @@ const AboutSection = () => {
 				</div>
 
 				<div className="aboutus_right">
-					<img src="" alt="" />
+					<img src={union} alt="" />
 				</div>
 			</div>
 		</section>
