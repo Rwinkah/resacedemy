@@ -1,0 +1,14 @@
+<svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="37" height="37" fill="#C9C9C9"/>
+<g id="Landing Page" clip-path="url(#clip0_0_1)">
+<rect width="1440" height="5500" transform="translate(-162 -224)" fill="white"/>
+<g id="Mini floating shapes">
+<path id="Periwinkle" d="M23.4811 9.28751C22.6207 3.57083 14.3793 3.57083 13.5189 9.28751C13.1899 11.4737 11.4737 13.1899 9.28751 13.5189C3.57083 14.3793 3.57083 22.6207 9.28751 23.4811C11.4737 23.8101 13.1899 25.5263 13.5189 27.7125C14.3793 33.4292 22.6207 33.4292 23.4811 27.7125C23.8101 25.5263 25.5263 23.8101 27.7125 23.4811C33.4292 22.6207 33.4292 14.3793 27.7125 13.5189C25.5263 13.1899 23.8101 11.4737 23.4811 9.28751Z" fill="#FC440F" stroke="#FC440F" stroke-opacity="0.2" stroke-width="10"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1440" height="5500" fill="white" transform="translate(-162 -224)"/>
+</clipPath>
+</defs>
+</svg>

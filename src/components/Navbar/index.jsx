@@ -29,9 +29,7 @@ export default function Navbar() {
 		>
 			<div className="nav__header">
 				<img className="logo" src={logo} alt="" />
-				<p className="logo__text">
-					<span>Magmund</span> Power
-				</p>
+				<p className="logo__text">{/* <span>Magmund</span> Power */}</p>
 			</div>
 
 			{isPageWide ? (
