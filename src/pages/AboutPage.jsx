@@ -4,20 +4,22 @@ import AboutCard from "../components/Card/AboutCard";
 import AboutData from "../assets/data/AboutData";
 import StaffData from "../assets/data/StaffData";
 import StaffCard from "../components/Card/StaffCard";
-
+import Enroll from "../components/Enroll/Enroll";
+import star from '../assets/images/aboutpage/star.svg';
+import founder from '../assets/images/aboutpage/founder.png';
 
 const AboutPage = () => {
 	return (
 		<div className="about-origin">
 			<div className="about__body">
 			<div className="about__body__top">
-				<img className="star" src="/images/star.svg" alt="star"/>
+				<img className="star" src={star} alt="star"/>
 				<div className="about__body__top__text-container">
 					<h6 className="about__body__top__text-container__heading">About US</h6>
 					<p className="about__body__top__text-container__text">We are Committed to Making Learning Easier for Special Needs Individuals</p>
 					
 				</div>
-				<img className="star2" src="/images/star.svg" alt="star"/>
+				<img className="star2" src={star} alt="star"/>
 			</div>
 			<section className="about__body__mission">
 				{AboutData.map((about) => (
@@ -32,7 +34,7 @@ const AboutPage = () => {
 			</section>
 			
 			<div className="about__body__founder">
-				<img className="founder-img" src="/images/founder.png" alt='founder'/>
+				<img className="founder-img" src={founder} alt='founder'/>
 				<div className="text-container">
 					<p className="quote">“Every child is special, learns differently and learns at different speeds ”.</p>
 					<h6 className="founders-name">Mrs Osariemen Aluyi</h6>
@@ -76,53 +78,7 @@ const AboutPage = () => {
 			</div>
 
 		</div>
-		<div className="about__body__enroll">
-				<div className="about__body__enroll__left">
-					<div className="intro-text">
-						<h2>Enroll with Us Today!</h2>
-						<p>Take the first step towards a brighter future for your loved one. Learn more about our programs and begin the enrollment process.</p>
-						<button>Get in touch</button>
-					</div>
-
-					<div className="about__body__enroll__left__contact">
-						<div className="school">
-							<h2 className="school__header">School</h2>
-							<h6>About Us</h6>
-							<h6>Enrollment</h6>
-						</div>
-
-						<div className="get-in-touch">
-							<h2>Get in touch</h2>
-							<h6>Contact us</h6>
-							<h6>spneeds@gmail.com</h6>
-							<h6>09012341235</h6>
-						</div>
-
-						<div className="address">
-							<h2>Address</h2>
-							<p>No 14, Isiuwa Street, Dausi, Benin City, Edo State, Nigeria.</p>
-
-
-					</div>
-				</div>
-
-
-				
-			</div>
-			<div className="about__body__enroll__right">
-
-					<div className="column-1">
-						<img classname='unionimg' src="/images/union.svg" alt="union"/>
-						<img classname='infinityimg'src="/images/infinity.svg" alt="infinity" />
-					</div>
-					
-					<div className="column-2">
-						<img classname='starimg' src="/images/periwinkle2.svg" alt="periwinkle"/>
-						<img classname='enrollimg' src="images/enrollPic.png" alt="enroll" />
-					</div>
-
-				</div>
-		</div>
+		<Enroll />
 
 		</div>
 		
