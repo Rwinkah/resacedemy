@@ -34,16 +34,7 @@ export default function Navbar() {
 
 			{isPageWide ? (
 				<div className="links__content">
-					<Link
-						className={selectPage === "Home" ? "links selected" : "links"}
-						smooth={true}
-						spy={true}
-						to="home"
-						offset={-45}
-						onClick={() => handleClick("Home")}
-					>
-						Home
-					</Link>
+					
 					<Link
 						className={selectPage === "About" ? "links selected" : "links"}
 						smooth={true}
@@ -52,7 +43,7 @@ export default function Navbar() {
 						offset={-45}
 						onClick={() => handleClick("About")}
 					>
-						About
+						About Us
 					</Link>
 					<Link
 						className={selectPage === "Services" ? "links selected" : "links"}
