@@ -1,0 +1,157 @@
+div.enrollment {
+    display: flex;
+    flex-direction: column;
+    &__top-text {
+        align-self: center;
+        margin-top: 8.81rem;
+        display: flex;
+        flex-direction: column;
+        width: 44.5rem;
+        
+
+        h6 {
+            align-self: center;
+            width: 4.437rem;
+            height: 1.8125rem;
+            color: #333;
+            font-family: Poppins;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 180%; /* 1.8rem */
+
+        }
+
+        p {
+            color: #333;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 3rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%; /* 4.5rem */
+        }
+    }
+
+    &__middle {
+        display: flex;
+        gap: 7rem;
+        align-self: center;
+
+        &__column1 {
+            margin-top: 6rem;
+            display: flex;
+            flex-direction: column;
+            width: 15.8125rem;
+
+
+            div.imgdesign {
+                display: flex;
+                gap: .5rem;
+                
+                img.line {
+                    size: .5rem;
+                }
+            }
+
+            h3 {
+                margin-top: 1.5rem;
+                width: 10.8125rem;
+                color: #333;
+                font-family: Montserrat;
+                font-size: 1.25rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 150%; /* 1.875rem */
+                
+            }
+
+            p {
+                color: #636363;
+                font-family: Poppins;
+                font-size: 0.9375rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 170%; /* 1.59375rem */
+                margin-top: 1.5rem;
+            }
+            
+        }
+
+        &__column2 {
+            margin-top: 6rem;
+            display: flex;
+            flex-direction: column;
+            width: 15.8125rem;
+
+            div.imgdesign {
+                display: flex;
+                gap: .5rem;
+                
+                img.line {
+                    size: .5rem;
+                }
+            }
+
+            h3 {
+                margin-top: 1.5rem;
+                color: #333;
+                font-family: Montserrat;
+                font-size: 1.25rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 150%; /* 1.875rem */
+            }
+                
+            p {
+                color: #636363;
+                font-family: Poppins;
+                font-size: 0.9375rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 170%; /* 1.59375rem */
+                margin-top: 1.5rem;
+            }
+            
+            
+        }
+
+        &__column3 {
+            margin-top: 6rem;
+            display: flex;
+            flex-direction: column;
+            width: 13.8125rem;
+
+            div.imgdesign {
+                display: flex;
+                
+                    
+                    img.line {
+                        size: .5rem;
+                    }
+            }
+
+            h3 {
+                margin-top: 1.5rem;
+                color: #333;
+                font-family: Montserrat;
+                font-size: 1.25rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 150%; /* 1.875rem */
+            }
+                
+            p {
+                color: #636363;
+                font-family: Poppins;
+                font-size: 0.9375rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 170%; /* 1.59375rem */
+                margin-top: 1.5rem;
+            }
+            
+            
+        }
+    }
+}

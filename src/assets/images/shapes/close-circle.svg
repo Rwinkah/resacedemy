@@ -1,0 +1,11 @@
+<svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+  <g id="close-circle" fill="none">
+    <g id="vuesax/linear/close-circle" fill="none">
+      <g id="close-circle_2" fill="white"> <!-- Change the fill color to white -->
+        <path id="Vector" d="M14.0002 25.6667C20.4168 25.6667 25.6668 20.4167 25.6668 14C25.6668 7.58334 20.4168 2.33334 14.0002 2.33334C7.5835 2.33334 2.3335 7.58334 2.3335 14C2.3335 20.4167 7.5835 25.6667 14.0002 25.6667Z" stroke="#FC440F" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" fill="white" /> <!-- Change the fill color to white -->
+        <path id="Vector_2" d="M10.6982 17.3017L17.3016 10.6984" stroke="#FC440F" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+        <path id="Vector_3" d="M17.3016 17.3017L10.6982 10.6984" stroke="#FC440F" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+    </g>
+  </g>
+</svg>
