@@ -1,97 +1,60 @@
 @import "./_colors.scss";
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800&display=swap");
 * {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .nav__component {
-  position: fixed;
-  display: flex;
-  z-index: 5;
-  top: 0%;
-  right: 0;
-  left: 0;
-  justify-content: space-between;
-  padding: 10px 5%;
-  align-items: center;
-  background-color: transparent;
-  transition: all 0.3s ease-in-out;
-  font-family: "Roboto Slab";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  color: white;
+	position: fixed;
+	display: flex;
+	z-index: 5;
+	top: 0%;
+	right: 0;
+	left: 0;
+	justify-content: space-between;
+	padding: 10px 5%;
+	align-items: center;
+	background-color: transparent;
+	transition: all 0.3s ease-in-out;
+	color: white;
 }
 .colorChange {
-  box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
-  background-color: white;
-  color: black;
+	box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+	background-color: white;
+	color: black;
 }
 
 .nav__header {
-  display: flex;
-  align-items: center;
-  font-family: "Roboto Slab";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 24px;
+	display: flex;
+	align-items: center;
 }
 
-.companyName {
-  color: $Black;
-}
-.logo__text {
-  font-family: "Roboto Slab";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 18px;
-  line-height: 24px;
-  span {
-    color: #e99815;
-  }
-}
-.links {
-  text-decoration: none;
-  padding: 10px;
-  margin-right: 20px;
-  cursor: pointer;
-}
+.links__content {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2.625rem;
 
-.selected {
-  font-weight: bold;
-}
-.Contact-Link {
-  background-color: #e99815;
-  padding: 10px 32px;
-  font-weight: 500;
-  border-radius: 5px;
-  color: black;
-}
+	> button {
+		color: #828282;
+		font-family: Poppins;
+		font-size: 0.9375rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		border: none;
+		background-color: transparent;
+	}
 
-a:hover {
-  font-weight: 700;
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .nav__header {
-    width: auto;
-  }
-  .nav__component {
-    padding: 1% 2%;
-  }
-  .links__content {
-    padding: 12px 0;
-  }
-}
-@media screen and (max-width: 768px) {
-  .nav__component {
-    padding: 0 3%;
-  }
-  .nav__header {
-    display: flex;
-    align-items: center;
-  }
+	> .contact_button {
+		display: flex;
+		padding: 0.625rem 1.125rem;
+		justify-content: center;
+		align-items: center;
+		gap: 0.625rem;
+		border-radius: 1.875rem;
+		border: 1.5px solid #ffd726;
+		background-color: transparent;
+	}
 }
