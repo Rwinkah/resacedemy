@@ -8,7 +8,8 @@ import StaffCard from "../components/Card/StaffCard";
 
 const AboutPage = () => {
 	return (
-		<div className="about__body">
+		<div className="about-origin">
+			<div className="about__body">
 			<div className="about__body__top">
 				<img className="star" src="/images/star.svg" alt="star"/>
 				<div className="about__body__top__text-container">
@@ -57,8 +58,74 @@ const AboutPage = () => {
 				</div>
 			</div>
 
+			<div className="about__body__partners">
+				<h1 className="partners">Partners & Collaborators</h1>
+				<div className="about__body__partners__container">
+					<div className="about__body__partners__container__brand1">
+						<img src="/images/government.png" alt='' />
+						<h6>Edo State Government</h6>
+					</div>
+					<div className="about__body__partners__container__brand">
+						<img src="/images/hospital.png" alt='hospital' />
+						<h6>Federal Neuro Psychiatric Hospital</h6>
+					</div>
+					
+					
+					
+				</div>
+			</div>
 
 		</div>
+		<div className="about__body__enroll">
+				<div className="about__body__enroll__left">
+					<div className="intro-text">
+						<h2>Enroll with Us Today!</h2>
+						<p>Take the first step towards a brighter future for your loved one. Learn more about our programs and begin the enrollment process.</p>
+						<button>Get in touch</button>
+					</div>
+
+					<div className="about__body__enroll__left__contact">
+						<div className="school">
+							<h2 className="school__header">School</h2>
+							<h6>About Us</h6>
+							<h6>Enrollment</h6>
+						</div>
+
+						<div className="get-in-touch">
+							<h2>Get in touch</h2>
+							<h6>Contact us</h6>
+							<h6>spneeds@gmail.com</h6>
+							<h6>09012341235</h6>
+						</div>
+
+						<div className="address">
+							<h2>Address</h2>
+							<p>No 14, Isiuwa Street, Dausi, Benin City, Edo State, Nigeria.</p>
+
+
+					</div>
+				</div>
+
+
+				
+			</div>
+			<div className="about__body__enroll__right">
+
+					<div className="column-1">
+						<img classname='unionimg' src="/images/union.svg" alt="union"/>
+						<img classname='infinityimg'src="/images/infinity.svg" alt="infinity" />
+					</div>
+					
+					<div className="column-2">
+						<img classname='starimg' src="/images/periwinkle2.svg" alt="periwinkle"/>
+						<img classname='enrollimg' src="images/enrollPic.png" alt="enroll" />
+					</div>
+
+				</div>
+		</div>
+
+		</div>
+		
 	);
 };
 
