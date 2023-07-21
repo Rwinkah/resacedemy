@@ -1,11 +1,12 @@
 @import './breakpoints';
+@import './fonts';
 
 div.about-origin {
-    overflow-x: hidden;
+        overflow-x: hidden;
     @include mobile {
+        overflow-x: visible;
         flex-wrap: wrap;
         width: 100vw;
-        // overflow-x: hidden;
         display: flex;
         align-content: center;
         padding: 0;
@@ -27,6 +28,7 @@ div.about__body {
         @include mobile {
             flex-direction: column;
             margin-top: 9.5rem;
+            width: 23.375rem;
 
             img {
                 display: none;
@@ -36,7 +38,7 @@ div.about__body {
         &__text-container {
 
             @include mobile {
-                width: 24.775rem;
+                width: 23.775rem;
                 align-self: center;
             }
             width: 46.6875rem;
@@ -49,8 +51,9 @@ div.about__body {
             p {
                 color: #333;
                 text-align: center;
-                font-family: Montserrat;
-                font-size: 3rem;
+                font-family: $Montserrat;
+                font-size: 2rem;
+                word-wrap: normal;
                 font-style: normal;
                 font-weight: 500;
                 line-height: 150%; /* 4.5rem */ 
@@ -64,7 +67,7 @@ div.about__body {
 
     }
 
-    section.about__body__mission {
+    div.about__body__mission {
 
         @include mobile {
             flex-direction: column;
@@ -72,10 +75,11 @@ div.about__body {
             padding: 1rem;
         }
         align-self: center;
-        margin-top: 9rem;
+        margin-top: 11rem;
         display: flex;
         flex-direction: row;
-        gap: 5rem;
+        gap: 18rem;
+        margin-right: 0;
     }
 
     &__founder {
@@ -98,6 +102,16 @@ div.about__body {
                     
                     
                 }   
+
+                @include mobile {
+                    h6 {
+                        margin-bottom: 0;
+                    }
+
+                    h3 {
+                        margin-top: 0;
+                    }
+                }
             }
 
         }
@@ -113,7 +127,7 @@ div.about__body {
         p.quote {
             width: 30.125rem;
             color: #333;
-            font-family: Montserrat;
+            font-family: $Montserrat;
             font-size: 1.675rem;
             font-style: normal;
             font-weight: 400;
@@ -123,7 +137,7 @@ div.about__body {
         h6.founders-name {
             margin-top: 1rem;
             color: #333;
-            font-family: Poppins;
+            font-family: $Poppins;
             font-size: 1rem;
             font-style: normal;
             font-weight: 700;
@@ -132,7 +146,7 @@ div.about__body {
 
         h3.founders-role {
             color: #333;
-            font-family: Poppins;
+            font-family: $Poppins;
             font-size: 0.9375rem;
             font-style: normal;
             font-weight: normal;
@@ -147,37 +161,7 @@ div.about__body {
         flex-direction: column;
 
 
-        &__text {
-
-            @include mobile {
-                align-self: center;
-            }
-            display: inline-flex;
-            flex-direction: column;
-            h3 {
-                align-self: center;
-                color: #333;
-                text-align: center;
-                font-family: Montserrat;
-                font-size: 2.5rem;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 150%;
-            }
-
-            p {
-                width: 17rem;
-                color: #636363;
-                text-align: center;
-                font-family: Poppins;
-                font-size: 0.9375rem;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 180%; /* 1.6875rem */
-                align-self: center;
-                margin-bottom: 1.88rem;
-            }
-        }
+        
         &__grid {
 
             @include mobile {
@@ -189,6 +173,75 @@ div.about__body {
             flex-wrap: wrap;
             justify-content: space-evenly;
             gap: .01rem;
+        }
+
+        &__text {
+
+           
+            display: inline-flex;
+            flex-direction: column;
+            h3 {
+                align-self: center;
+                color: #333;
+                text-align: center;
+                font-family: $Montserrat;
+                font-size: 2.5rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 150%;
+            }
+
+            p {
+                width: 17rem;
+                color: #636363;
+                text-align: center;
+                font-family: $Poppins;
+                font-size: 0.9375rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 180%; /* 1.6875rem */
+                align-self: center;
+                margin-bottom: 1.88rem;
+            }
+
+            @include mobile {
+                align-self: center;
+
+
+                h3 {
+                    margin-bottom: 1rem;
+                    color: #333;
+                    text-align: center;
+                    font-family: $Montserrat;
+                    font-size: 1.5rem;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 150%; /* 2.25rem */
+                }
+
+                p {
+                    margin-top: 0;
+                    align-self: stretch;
+                    color: #636363;
+                    text-align: center;
+                    font-family: $Poppins;
+                    font-size: 0.9375rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 180%; /* 1.6875rem */
+                }
+            }
+        }
+
+        @include mobile {
+            color: #333;
+            text-align: center;
+            font-family: $Montserrat;
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 150%; /* 2.25rem */
+            align-items: start;
         }
     }
 
@@ -203,7 +256,7 @@ div.about__body {
             align-self: center;
             color: #333;
             text-align: center;
-            font-family: Montserrat;
+            font-family: $Montserrat;
             font-size: 2.5rem;
             font-style: normal;
             font-weight: 500;
@@ -258,9 +311,12 @@ div.about__body {
         }
 
         @include mobile {
+
+            align-self: center;
+
             h1 {
                 align-self: center;
-                font-size: 1.5rem;
+                font-size: 2rem;
                 
             }
 
