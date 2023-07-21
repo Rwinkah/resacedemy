@@ -5,7 +5,7 @@ import union from "../assets/images/aboutsection/union.svg";
 
 const AboutSection = () => {
 	return (
-		<section id="about-us" className="aboutus_container">
+		<section className="aboutus_container">
 			<div className="aboutus_wrapper">
 				<div className="aboutus_left">
 					<h3>About us</h3>

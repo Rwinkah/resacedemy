@@ -24,9 +24,10 @@ const AboutPage = () => {
 					</div>
 					<img className="star2" src={star} alt="star" />
 				</div>
-				<section className="about__body__mission">
+				<div className="about__body__mission">
 					{AboutData.map((about) => (
 						<AboutCard
+							key={about.id}
 							src={about.img}
 							description={about.description}
 							header={about.header}
@@ -34,7 +35,7 @@ const AboutPage = () => {
 							text2={about.text2}
 						/>
 					))}
-				</section>
+				</div>
 
 				<div className="about__body__founder">
 					<img className="founder-img" src={founder} alt="founder" />
@@ -60,7 +61,12 @@ const AboutPage = () => {
 					</div>
 					<div className="about__body__staff__grid">
 						{StaffData.map((staff) => (
-							<StaffCard src={staff.src} name={staff.name} role={staff.role} />
+							<StaffCard
+								key={staff.id}
+								src={staff.src}
+								name={staff.name}
+								role={staff.role}
+							/>
 						))}
 					</div>
 				</div>

@@ -6,9 +6,6 @@ import dot from "../../assets/images/footer/ellipse-6.png";
 
 const Footer = () => {
 	const navigate = useNavigate();
-	const handleClick = (path) => {
-		navigate(`/${path.toLowerCase()}`);
-	};
 
 	return (
 		<section className="footer_container">
@@ -27,8 +24,10 @@ const Footer = () => {
 						<div className="footer_left_footer">
 							<div className="footer_left_footer_links">
 								<h3>School</h3>
-								<button onClick={handleClick("about")}>About us</button>
-								<button onClick={handleClick("enrollment")}>Enrollment</button>
+								<button onClick={() => navigate("/about")}>About us</button>
+								<button onClick={() => navigate("/enrollment")}>
+									Enrollment
+								</button>
 							</div>
 							<div className="footer_left_footer_contact">
 								<h3>Get in touch</h3>
