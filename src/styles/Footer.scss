@@ -21,6 +21,7 @@
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
+			align-items: center;
 			gap: 11.25rem;
 			width: 100%;
 
@@ -164,9 +165,11 @@
 			}
 
 			> .footer_right {
+				display: flex;
+				justify-content: center;
+				align-items: center;
 				width: 28.5rem;
-				height: 26.6875rem;
-				flex-shrink: 0;
+				height: 100%;
 			}
 		}
 
