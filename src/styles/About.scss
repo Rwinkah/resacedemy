@@ -1,0 +1,193 @@
+div.about__body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 6rem;
+    &__top {
+        display: flex;
+        align-self: center;
+        
+        &__text-container {
+            width: 46.6875rem;
+            height: 13rem;
+            justify-content: center;
+
+            h6 {
+                text-align: center;
+            }
+            p {
+                color: #333;
+                text-align: center;
+                font-family: Montserrat;
+                font-size: 3rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 150%; /* 4.5rem */ 
+            }
+            
+        }
+
+        img.star {
+            margin-top: 11rem;
+        }
+    }
+
+    section.about__body__mission {
+        align-self: center;
+        margin-top: 9rem;
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+    }
+
+    &__founder {
+        margin-top: 10rem;
+        display: inline-flex;
+        gap: 2.5rem;
+        align-self: flex-start;
+        padding-left: 2rem;
+        
+        img {
+            border: 1px solid #333;
+        }
+        p.quote {
+            width: 30.125rem;
+            color: #333;
+            font-family: Montserrat;
+            font-size: 1.675rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 2.8125rem */
+        }
+
+        h6.founders-name {
+            margin-top: 1rem;
+            color: #333;
+            font-family: Poppins;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 170%; /* 1.7rem */
+        }
+
+        h3.founders-role {
+            color: #333;
+            font-family: Poppins;
+            font-size: 0.9375rem;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 170%; /* 1.59375rem */
+        }
+    }
+
+    &__staff {
+        margin-top: 10.84rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+
+        &__text {
+            display: inline-flex;
+            flex-direction: column;
+            h3 {
+                align-self: center;
+                color: #333;
+                text-align: center;
+                font-family: Montserrat;
+                font-size: 2.5rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 150%;
+            }
+
+            p {
+                width: 17rem;
+                color: #636363;
+                text-align: center;
+                font-family: Poppins;
+                font-size: 0.9375rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 180%; /* 1.6875rem */
+                align-self: center;
+                margin-bottom: 1.88rem;
+            }
+        }
+        &__grid {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: .01rem;
+        }
+    }
+
+    &__partners {
+        margin-top: 10rem;
+        display: flex;
+        gap: 1.25rem;
+        justify-content: space-between;
+        flex-direction: column;
+
+        h1 {
+            align-self: center;
+            color: #333;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 2.5rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%;
+        }
+
+        &__container {
+            align-self: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            gap: 3rem;
+
+
+            &__brand1 {
+                display: flex;
+                flex-direction: column;
+                img {
+                    margin-top: 1rem;
+                    align-self: center;
+                    width: 4.565rem;
+                    height: auto;
+                    background-size: cover ;
+                }
+
+                h6 {
+                    width: 4.375rem;
+                    text-align: center;
+                    align-self: center;
+                    
+                }
+            }
+
+            &__brand {
+                img {
+                    margin-left: 1rem;
+                    align-self: center;
+                    width: 4.565rem;
+                    height: auto;
+                    background-size: cover ;
+                }
+
+                h6 {
+                    width: 6.375rem;
+                    text-align: center;
+                    align-self: center;
+                    
+                }
+            }
+
+        }
+    }
+
+    
+}
