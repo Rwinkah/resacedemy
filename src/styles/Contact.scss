@@ -1,0 +1,165 @@
+@import "./_breakpoints.scss";
+@import "./_colors.scss";
+@import "./_fonts.scss";
+
+.contactus {
+	&_container {
+		height: auto;
+		background-color: $White;
+	}
+
+	&_wrapper {
+		padding: 6rem 0;
+		margin: 0px 5rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 5.4rem;
+
+		> header {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+
+			> img {
+				position: absolute;
+				transform: translate(0%, 0%);
+			}
+
+			> h3 {
+				color: $Heading-color;
+				font-family: $Poppins;
+				font-size: 1rem;
+				font-style: normal;
+				font-weight: 500;
+				line-height: 180%; /* 1.8rem */
+				margin: 0;
+			}
+
+			> h1 {
+				color: $Heading-color;
+				text-align: center;
+				font-family: $Montserrat;
+				font-size: 3rem;
+				font-style: normal;
+				font-weight: 500;
+				line-height: 150%; /* 4.5rem */
+				margin: 0;
+			}
+
+			> p {
+				width: 27.4375rem;
+				color: $Paragraph-color;
+				text-align: center;
+				font-family: $Poppins;
+				font-size: 0.9375rem;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 180%; /* 1.6875rem */
+				margin: 0;
+			}
+		}
+
+		> body {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: center;
+			gap: 11.56rem;
+
+			> .body_left {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				width: 40%;
+				overflow: hidden;
+			}
+
+			> .body_right {
+				width: auto;
+				height: auto;
+				width: fit-content;
+				padding: 2.5rem;
+				justify-content: center;
+				align-items: center;
+				border-radius: 1.25rem;
+				border: 1px solid #d6d6d6;
+
+				> form {
+					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
+					align-content: flex-start;
+					gap: 1.5rem 1.25rem;
+					flex-shrink: 0;
+					flex-wrap: wrap;
+
+					> .form_group {
+						display: flex;
+						flex-direction: row;
+						gap: 0.5625rem;
+
+						> div {
+							display: flex;
+							flex-direction: column;
+							gap: 0.58rem;
+
+							> label {
+								color: $Heading-color;
+								font-family: $Montserrat;
+								font-size: 0.9375rem;
+								font-style: normal;
+								font-weight: 500;
+								line-height: 1.3rem; /* 138.667% */
+							}
+
+							> input {
+								display: flex;
+								width: 15.875rem;
+								padding: 0.625rem 1.25rem;
+								align-items: flex-start;
+								gap: 0.625rem;
+								border: 1px solid #d6d6d6;
+								border-radius: 1.25rem;
+							}
+
+							> textarea {
+								display: flex;
+								width: 35rem;
+								height: 7.1875rem;
+								padding: 0.625rem 1.25rem;
+								align-items: flex-start;
+								gap: 0.625rem;
+								border-radius: 1.25rem;
+								border: 1px solid #d6d6d6;
+								resize: none;
+							}
+						}
+					}
+
+					> button {
+						display: flex;
+						border: none;
+						padding: 0.875rem 1.875rem;
+						justify-content: center;
+						align-items: center;
+						gap: 0.625rem;
+						border-radius: 1.875rem;
+						background: $Base-color;
+
+						color: $Black;
+						font-family: $Poppins;
+						font-size: 0.9375rem;
+						font-style: normal;
+						font-weight: 500;
+						line-height: normal;
+					}
+				}
+			}
+		}
+	}
+}

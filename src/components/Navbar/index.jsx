@@ -22,7 +22,7 @@ export default function Navbar() {
 					<button>Youtube</button>
 					<button
 						className="contact_button"
-						onClick={() => navigate("Contact Us")}
+						onClick={() => navigate("/contact")}
 					>
 						Contact Us
 					</button>
