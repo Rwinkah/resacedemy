@@ -16,6 +16,11 @@
 	align-items: center;
 	gap: 14rem;
 
+	@include mobile {
+		flex-direction: column;
+		
+	}
+
 	> .aboutus_left {
 		display: flex;
 		flex-direction: column;
