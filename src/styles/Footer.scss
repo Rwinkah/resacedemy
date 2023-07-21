@@ -1,92 +1,223 @@
+@import "./_breakpoints.scss";
 @import "./_colors.scss";
-.Footer {
-  background-color: black;
-  width: 100%;
-  height: 15%;
-  padding: 0.5rem 0;
-  display: flex;
-  gap: 1rem;
-  flex-direction: column-reverse;
-  justify-content: space-between;
-  font-family: "Roboto Slab" !important;
-}
-.F_text {
-  font-weight: 300;
-  color: $White;
-  display: flex;
-  flex-direction: column;
-  line-height: 1.5;
-  margin-left: 5%;
-}
-.F_text p {
-  margin: 0.1rem;
-}
-.F_Team {
-  font-weight: bold !important;
-}
-.F_Socials {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  flex-wrap: nowrap;
-  align-items: center;
-}
-.F_item {
-  color: $Black;
-  margin-right: 1rem;
-  font-size: 24px;
-  display: flex;
-  padding: 0.5rem;
-  text-decoration: none;
-  background-color: $Base-color;
-  transition: all 0.4s ease-in-out;
-  cursor: pointer;
-}
-.F_item svg {
-  align-self: center;
-}
-.F_item:hover {
-  color: #666;
-}
-@media screen and (min-width: 769px) and (max-width: 1199px) {
-  .Footer {
-    justify-content: space-around;
-  }
-  .F_text {
-    text-align: left;
-    margin: 0;
-    padding: 1rem;
-  }
-  .F_Socials {
-    margin: 0;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 1rem;
-  }
-  .F_item {
-    margin-right: 0;
-    font-size: 30px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .Footer {
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-content: center;
-  }
-  .F_text {
-    text-align: left;
-    margin: 0;
-    padding: 1rem;
-  }
-  .F_Socials {
-    margin: 0;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 1rem;
-  }
-  .F_item {
-    margin-right: 0;
-    font-size: 30px;
-  }
+@import "./_fonts.scss";
+
+.footer {
+	&_container {
+		height: auto;
+		background-color: $White;
+	}
+
+	&_wrapper {
+		padding: 6rem 0 0 0;
+		margin: 0px 5rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 4.5rem;
+
+		> header {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			gap: 11.25rem;
+			width: 100%;
+
+			> .footer_left {
+				display: flex;
+				flex-direction: column;
+				gap: 6rem;
+				align-items: flex-start;
+				justify-content: space-between;
+
+				> .footer_left_header {
+					display: inline-flex;
+					flex-direction: column;
+					align-items: flex-start;
+					gap: 1.0625rem;
+
+					> h1 {
+						width: 17.6875rem;
+						color: $Heading-color;
+						font-family: $Montserrat;
+						font-size: 3rem;
+						font-style: normal;
+						font-weight: 600;
+						line-height: normal;
+					}
+
+					> p {
+						width: 31.5625rem;
+						color: $Paragraph-color;
+						font-family: $Poppins;
+						font-size: 0.9375rem;
+						font-weight: 400;
+						line-height: 170%;
+					}
+
+					> button {
+						border: none;
+						padding: 0.875rem 1.875rem;
+						border-radius: 1.875rem;
+						background: $Base-color;
+						gap: 0.625rem;
+						align-items: center;
+						justify-content: center;
+						color: $Black;
+						font-family: $Poppins;
+						font-size: 0.9375rem;
+						font-style: normal;
+						font-weight: 700;
+						line-height: normal;
+					}
+				}
+
+				> .footer_left_footer {
+					display: inline-flex;
+					align-items: flex-start;
+					gap: 2rem;
+
+					> .footer_left_footer_links {
+						display: flex;
+						flex-direction: column;
+						align-items: flex-start;
+						gap: 1rem;
+
+						> h3 {
+							color: $Heading-color;
+							font-family: $Montserrat;
+							font-size: 1.125rem;
+							font-style: normal;
+							font-weight: 600;
+							line-height: normal;
+						}
+
+						> button {
+							display: flex;
+							border: none;
+							background-color: transparent;
+							align-content: flex-start;
+							width: 6.4375rem;
+							color: $Paragraph-color;
+							font-family: $Poppins;
+							font-size: 0.875rem;
+							font-style: normal;
+							font-weight: 400;
+							line-height: 180%; /* 1.575rem */
+						}
+					}
+
+					> .footer_left_footer_contact {
+						display: flex;
+						flex-direction: column;
+						align-items: flex-start;
+						gap: 1rem;
+
+						> h3 {
+							color: $Heading-color;
+							font-family: $Montserrat;
+							font-size: 1.125rem;
+							font-style: normal;
+							font-weight: 600;
+							line-height: normal;
+						}
+
+						> p {
+							width: 11.4375rem;
+							color: $Paragraph-color;
+							font-family: $Poppins;
+							font-size: 0.875rem;
+							font-style: normal;
+							font-weight: 400;
+							line-height: 180%; /* 1.575rem */
+						}
+					}
+
+					> .footer_left_footer_address {
+						display: flex;
+						flex-direction: column;
+						align-items: flex-start;
+						gap: 1rem;
+
+						> h3 {
+							color: $Heading-color;
+							font-family: $Montserrat;
+							font-size: 1.125rem;
+							font-style: normal;
+							font-weight: 600;
+							line-height: normal;
+						}
+
+						> p {
+							width: 11.4375rem;
+							height: 6.0625rem;
+							color: $Paragraph-color;
+							font-family: $Poppins;
+							font-size: 0.875rem;
+							font-style: normal;
+							font-weight: 400;
+							line-height: 180%; /* 1.575rem */
+						}
+					}
+				}
+			}
+
+			> .footer_right {
+				width: 28.5rem;
+				height: 26.6875rem;
+				flex-shrink: 0;
+			}
+		}
+
+		> footer {
+			display: inline-flex;
+			height: 4.5rem;
+			padding: 0rem 17.375rem 0rem 17.4375rem;
+			justify-content: center;
+			align-items: center;
+			flex-shrink: 0;
+			border-top: 1px solid rgba(0, 0, 0, 0.15);
+			background: #fcfcfc;
+
+			> .footer_center {
+				display: flex;
+				align-items: center;
+				gap: 1.25rem;
+
+				> p {
+					color: rgba(0, 0, 0, 0.39);
+					font-family: $Poppins;
+					font-size: 0.875rem;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 140%; /* 1.225rem */
+				}
+
+				> img {
+					width: 0.25rem;
+					height: 0.25rem;
+					fill: #919191;
+				}
+
+				> h3 {
+					color: rgba(0, 0, 0, 0.39);
+					font-family: $Poppins;
+					font-size: 0.875rem;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 140%; /* 1.225rem */
+
+					> span {
+						color: rgba(0, 0, 0, 0.39);
+						font-family: $Poppins;
+						font-size: 0.875rem;
+						font-style: normal;
+						font-weight: 700;
+						line-height: 140%;
+					}
+				}
+			}
+		}
+	}
 }

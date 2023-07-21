@@ -8,9 +8,11 @@ import "../../styles/NavBar.scss";
 export default function Navbar() {
 	const navigate = useNavigate();
 	let isPageWide = UseMediaQuery("(min-width: 769px)");
+
 	const handleClick = (path) => {
 		navigate(`/${path.toLowerCase()}`);
 	};
+
 	const [colorChange, setColorChange] = useState(false);
 
 	const changeNavbarColor = () => {
@@ -22,7 +24,7 @@ export default function Navbar() {
 	};
 
 	window.addEventListener("scroll", changeNavbarColor);
-	
+
 	return (
 		<nav
 			className={colorChange ? "nav__component colorChange" : "nav__component"}
