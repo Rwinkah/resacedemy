@@ -1,9 +1,6 @@
 @import "./_colors.scss";
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800&display=swap");
-* {
-	margin: 0;
-	padding: 0;
-}
+@import "./_breakpoints.scss";
+@import "./_fonts.scss";
 
 .nav__component {
 	position: fixed;
@@ -37,8 +34,8 @@
 	gap: 2.625rem;
 
 	> button {
-		color: #828282;
-		font-family: Poppins;
+		color: $Nav-Button;
+		font-family: $Poppins;
 		font-size: 0.9375rem;
 		font-style: normal;
 		font-weight: 400;
@@ -54,7 +51,7 @@
 		align-items: center;
 		gap: 0.625rem;
 		border-radius: 1.875rem;
-		border: 1.5px solid #ffd726;
+		border: 1.5px solid $Base-color;
 		background-color: transparent;
 	}
 }
