@@ -1,4 +1,21 @@
+@import './breakpoints';
+
+div.about-origin {
+    overflow-x: hidden;
+    @include mobile {
+        flex-wrap: wrap;
+        width: 100vw;
+        // overflow-x: hidden;
+        display: flex;
+        align-content: center;
+        padding: 0;
+    }
+
+}
 div.about__body {
+    @include mobile {
+        padding: 0;
+    }
     display: flex;
     flex-direction: column;
     position: relative;
@@ -6,8 +23,22 @@ div.about__body {
     &__top {
         display: flex;
         align-self: center;
+
+        @include mobile {
+            flex-direction: column;
+            margin-top: 9.5rem;
+
+            img {
+                display: none;
+            }
+        }
         
         &__text-container {
+
+            @include mobile {
+                width: 24.775rem;
+                align-self: center;
+            }
             width: 46.6875rem;
             height: 13rem;
             justify-content: center;
@@ -30,9 +61,16 @@ div.about__body {
         img.star {
             margin-top: 11rem;
         }
+
     }
 
     section.about__body__mission {
+
+        @include mobile {
+            flex-direction: column;
+            align-self: center;
+            padding: 1rem;
+        }
         align-self: center;
         margin-top: 9rem;
         display: flex;
@@ -41,6 +79,28 @@ div.about__body {
     }
 
     &__founder {
+
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+            
+            img {
+                width: 13.9375rem;
+                height: auto;
+                align-self: flex-start;
+            }
+
+            div.text-container {
+                p.quote {
+                    width: 21.375rem;
+                    font-size: 1.375rem;
+                    
+                    
+                }   
+            }
+
+        }
         margin-top: 10rem;
         display: inline-flex;
         gap: 2.5rem;
@@ -88,6 +148,10 @@ div.about__body {
 
 
         &__text {
+
+            @include mobile {
+                align-self: center;
+            }
             display: inline-flex;
             flex-direction: column;
             h3 {
@@ -115,6 +179,11 @@ div.about__body {
             }
         }
         &__grid {
+
+            @include mobile {
+                flex-direction: column;
+                align-content: center;
+            }
             width: 100%;
             display: flex;
             flex-wrap: wrap;
@@ -186,6 +255,18 @@ div.about__body {
                 }
             }
 
+        }
+
+        @include mobile {
+            h1 {
+                align-self: center;
+                font-size: 1.5rem;
+                
+            }
+
+            &__container {
+                flex-direction: column;
+            }
         }
     }
 
