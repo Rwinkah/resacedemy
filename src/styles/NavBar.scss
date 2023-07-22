@@ -17,6 +17,7 @@
 	color: white;
 
 	@include mobile {
+		position: inherit;
 		padding: 10px 1%;
 	}
 }
