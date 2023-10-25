@@ -12,24 +12,13 @@
 	justify-content: space-between;
 	padding: 10px 5%;
 	align-items: center;
-	background-color: transparent;
+	background-color: $White;
 	transition: all 0.3s ease-in-out;
 	color: white;
 
 	@include mobile {
-		width: 100vw;
-		padding: 10px 0;
+		padding: 10px 1%;
 	}
-}
-.colorChange {
-	box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
-	background-color: white;
-	color: black;
-}
-
-.nav__header {
-	display: flex;
-	align-items: center;
 }
 
 .links__content {
